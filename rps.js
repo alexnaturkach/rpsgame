@@ -24,11 +24,13 @@ function round(a, b) {
   if(a === b){
     return "It's a Tie!";
   }
-  else if((a === "rock" && b === "scissors") || (a === "paper" && b === "rock") || (a === "scissors" && b === "paper")) {
+  else if((a === "rock" && b === "scissors") || (a === "paper" && b === "rock") || 
+          (a === "scissors" && b === "paper")) {
     uw += 1;
     return "You Win! You played:" + " " + a + " " + "and computer played:" + " " + b;
     }
-  else if((a === "rock" && b === "paper") || (a === "paper" && b === "scissors") || (a === "scissors" && b === "rock")){
+  else if((a === "rock" && b === "paper") || (a === "paper" && b === "scissors") || 
+          (a === "scissors" && b === "rock")){
     cw += 1;
     return "You Lost! You played:" + " " + a + " " + "and computer played:" + " " + b;
 
