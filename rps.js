@@ -17,24 +17,30 @@ var cw = 0;
 
 //play one round + compare weapons + update round winners
 function round(a, b) {
-  var p = prompt("Please, enter one out of three weapons: 'rock', 'paper', 'scissors'");
+  var p = prompt("Please, enter one out of three weapons: \
+  'rock', 'paper', 'scissors'");
   var userPlay = p.toLowerCase();
   a = userPlay;
   b = computerPlay();
   if(a === b){
     return "It's a Tie!";
   }
-  else if((a === "rock" && b === "scissors") || (a === "paper" && b === "rock") || (a === "scissors" && b === "paper")) {
+  else if((a === "rock" && b === "scissors") || (a === "paper" && b ===
+          "rock") || (a === "scissors" && b === "paper")) {
     uw += 1;
-    return "You Win! You played:" + " " + a + " " + "and computer played:" + " " + b;
+    return "You Win! You played:" + " " + a + " " +
+    "and computer played:" + " " + b;
     }
-  else if((a === "rock" && b === "paper") || (a === "paper" && b === "scissors") || (a === "scissors" && b === "rock")){
+  else if((a === "rock" && b === "paper") || (a === "paper" && b ===
+          "scissors") || (a === "scissors" && b === "rock")){
     cw += 1;
-    return "You Lost! You played:" + " " + a + " " + "and computer played:" + " " + b;
+    return "You Lost! You played:" + " " + a + " " +
+    "and computer played:" + " " + b;
 
   }
   else {
-    alert("Wrong entry. Please, select one out of three weapons: 'rock', 'paper', 'scissors'");
+    alert("Wrong entry. Please, select one out of three weapons: \
+    'rock', 'paper', 'scissors'");
     round();
   }
 };
