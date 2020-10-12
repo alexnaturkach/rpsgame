@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .choice {
+      margin: 0px 20px;
+      width: 100px;
+      height: 100px;
+    }
+
+
+    .start {
+      text-align: center;
+      margin-top: 20%;
+    }
+
+    .weaponChoice {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 100%;
+      text-align: center;
+    }
+
+    .scoreContainer {
+      width: 100%;
+      text-align: center;
+    }
+
+    .choice:hover {
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="start">
+    <p class='weaponChoice'>Rock Paper Scissors</p>
+    <p class='weaponChoice'>Choose your weapon!</p>
+  </div>
+  <div class="container">
+    <img src="./images/rock.png" alt="" class='choice' id='rock'>
+    <img src="./images/paper.png" alt="" class='choice' id='paper'>
+    <img src="./images/scissors.png" alt="" class='choice' id='scissors'>
+  </div>
+  <div class="scoreContainer">
+    <div class="score">
+      <di>
+        <p>Player Score: <span id='playerScore'>0</span></p>
+    </div>
+    <div>
+      <p>Computer Score: <span id='computerScore'>0</span></p>
+    </div>
+
+  </div>
+  </div>
+  <script src="rps.js"></script>
+</body>
+
+</html>
